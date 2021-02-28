@@ -4,8 +4,9 @@
 
 ![](https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_1280.jpg)
 
-the file 01_Preparation.py is written to be excecuted in VS Code with a interactive python sesion.
+The file included in this repository 01_Preparation.py is written to be excecuted in VS Code with a interactive python sesion.
 
+The folowing tutorial explains the VS Code feature:
 https://code.visualstudio.com/docs/python/jupyter-support-py
 
 
