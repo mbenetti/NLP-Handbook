@@ -7,7 +7,8 @@
 The file included in this repository 01_Preparation.py is written to be excecuted in VS Code with a interactive python sesion.
 
 The folowing tutorial explains the VS Code feature:
-https://code.visualstudio.com/docs/python/jupyter-support-py
+https://code.visualstudio.com/docs/python/jupyter-support-py#_python-interactive-window
+
 
 
 
