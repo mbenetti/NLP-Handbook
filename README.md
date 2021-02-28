@@ -2,6 +2,8 @@
 ## Serie of snippers for NLP tasks
 ### A Step-By-Step Approach to Understand TextBlob, NLTK, Scikit-Learn, and LSTM networks
 
+![](https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_1280.jpg)
+
 the file 01_Preparation.py is written to be excecuted in VS Code with a interactive python sesion.
 
 https://code.visualstudio.com/docs/python/jupyter-support-py
