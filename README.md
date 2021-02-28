@@ -1,5 +1,5 @@
 # NLP Handbook
-## Serie of snippers for NLP tasks
+## A serie of snippers to perform NLP tasks
 ### A Step-By-Step Approach to Understand TextBlob, NLTK, Scikit-Learn, and LSTM networks
 
 ![](https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_1280.jpg)
