@@ -14,7 +14,7 @@ This is a game changer when writing Python code for analysis because you no long
 Is possible to see all the variables created, in a similar fashion as R-Studio
 
 <p align="center">
-  <img width="800" height="500" src="Capture.PNG">
+  <img width="900" height="500" src="Capture.PNG">
 </p>
 
 For more information visit (https://code.visualstudio.com/docs/python/jupyter-support-py)
