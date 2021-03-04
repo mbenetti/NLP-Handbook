@@ -1,10 +1,69 @@
-# NLP Handbook
-## A serie of snippers to perform NLP tasks
-### A Step-By-Step Approach to Understand TextBlob, NLTK, Scikit-Learn, and LSTM networks
-
 ![Credit Pixabay](https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_1280.jpg)
 
-The file included in this repository 01_Preparation.py is written to be excecuted in VS Code with a interactive python sesion.
+# NLP Sentiment Analysis Handbook
+
+A Step-By-Step Approach to Understand TextBlob, NLTK, Scikit-Learn, and LSTM  networks 
+applied to Sentiment Analysis.
+
+
+Adaptation, corrections and modifications by Mauro Benetti 03-2021
+
+This article is base on :
+
+* https://towardsdatascience.com/nlp-sentiment-analysis-for-beginners-e7897f976897
+* https://www.mdeditor.tw/pl/pISR/zh-hk
+* https://stackabuse.com/removing-stop-words-from-strings-in-python/
+
+For aditonal information you can visit:
+* https://www.datacamp.com/community/tutorials/stemming-lemmatization-python
+* http://www.nltk.org/data.html
+
+-------------------------------------------------------------------------------------
+
+# Introduction
+
+**Natural Language Processing** (NLP) is the area of machine learning that focuses on the 
+generation and understanding of language. Its main objective is to enable machines to 
+understand, communicate and interact with humans in a natural way.
+
+NLP has many tasks such as Text Generation, Text Classification, Machine Translation, 
+Speech Recognition, Sentiment Analysis, etc. For a beginner to NLP, looking at these 
+tasks and all the techniques involved in handling such tasks can be quite daunting. 
+And in fact, it is very difficult for a newbie to know exactly where and how to start.
+
+Out of all the NLP tasks, I personally think that Sentiment Analysis (SA) is probably 
+the easiest, which makes it the most suitable starting point for anyone who wants to 
+start go into NLP.
+
+In this article, I compile various techniques of how to perform SA, ranging from simple 
+ones like TextBlob and NLTK to more advanced ones like Sklearn and Long Short Term 
+Memory (LSTM) networks.
+
+After reading this, you can expect to understand the followings:
+
+*   Toolkits used in SA: TextBlob and NLTK
+*   Algorithms used in SA: Naive Bayes, SVM, Logistic Regression and LSTM
+*   Jargons like stop-word removal, stemming, bag of words, corpus, tokenisation etc.
+*   Create a word cloud
+
+The flow of this article:
+
+*   Data cleaning and pre-processing
+*   TextBlob
+*   Algorithms: Logistic Regression, Naive Bayes, SVM and LSTM
+    
+## Problem 
+
+In this article, we will work with a data set that consists of 3000 sentences coming 
+from reviews on imdb.com, amazon.com, and yelp.com. Each sentence is labeled according 
+to whether it comes from a positive review (labelled as 1) or negative review 
+(labelled as 0).
+
+Data can be downloaded from the website. Alternatively, it can be downloaded from here 
+(highly recommended). The folder sentiment_labelled_sentences(containing the data file 
+full_set.txt) should be in the same directory as your notebook.
+
+Included in this repository, the file '01_Preparation.py' is written to be excecuted in VS Code with a interactive python sesion.
 
 The folowing tutorial explains the VS Code feature:
 https://code.visualstudio.com/docs/python/jupyter-support-py#_python-interactive-window
