@@ -63,14 +63,31 @@ Data can be downloaded from the website. Alternatively, it can be downloaded fro
 (highly recommended). The folder sentiment_labelled_sentences(containing the data file 
 full_set.txt) should be in the same directory as your notebook.
 
-Included in this repository, the file '01_Preparation.py' is written to be excecuted in VS Code with a interactive python sesion.
+## Content of the repository
+
+Included in this repository, the file '01_Preparation.py' is written to be excecuted in 
+VS Code with a interactive python sesion. A jupyter notebook and a markdown version of 
+the notebook is included due to the convinience for reading as a book. Also a folder with 
+5 datasets already labelled.
+
+## Advantages of runing on VS Code instead a Jupyter Notebook
 
 The folowing tutorial explains the VS Code feature:
 https://code.visualstudio.com/docs/python/jupyter-support-py#_python-interactive-window
 
-This is a game changer when writing Python code for analysis because you no longer need to code in a Jupyter Notebook to execute your analysis. Simply write your code in a .py file and press Shift+ENTER to execute line-by-line in the Python Interactive Window. Repeat this process as you run code, explore, and build out your analysis. Note that you can also type Python directly into the Interactive Window just like you can type directly in R’s Console as well to execute code.
+This is a game changer when writing Python code for analysis because you no longer need 
+to code in a Jupyter Notebook to execute your analysis. Simply write your code in a .py 
+file and press Shift+ENTER to execute line-by-line in the Python Interactive Window. 
 
-It is possible to see all the variables created and their type, in a similar fashion as R-Studio.
+Repeat this process as you run code, explore, and build out your analysis. Note that you 
+can also type Python directly into the Interactive Window just like you can type directly 
+in R’s Console as well to execute code.
+
+With this aproach we aboid the limitatons on the version control presented by Jupyter 
+Notebooks.
+
+It is possible to see all the variables created and their type, in a similar fashion as 
+R-Studio.
 
 <p align="center">
   <img width="900" height="500" src="Capture.PNG">
