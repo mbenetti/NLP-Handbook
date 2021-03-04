@@ -67,7 +67,7 @@ Repeat this process as you run code, explore, and build out your analysis. Note 
 With this approach we avoid the limitations on the version control presented by Jupyter Notebooks.
 
 <p align="center">
-  <img width="900" height="500" src="Capture.PNG">
+  <img width="900" height="500" src="figures\Capture.PNG">
 </p>
 
 
