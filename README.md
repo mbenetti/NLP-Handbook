@@ -70,7 +70,7 @@ https://code.visualstudio.com/docs/python/jupyter-support-py#_python-interactive
 
 This is a game changer when writing Python code for analysis because you no longer need to code in a Jupyter Notebook to execute your analysis. Simply write your code in a .py file and press Shift+ENTER to execute line-by-line in the Python Interactive Window. Repeat this process as you run code, explore, and build out your analysis. Note that you can also type Python directly into the Interactive Window just like you can type directly in R’s Console as well to execute code.
 
-Is possible to see all the variables created, in a similar fashion as R-Studio
+It is possible to see all the variables created and their type, in a similar fashion as R-Studio.
 
 <p align="center">
   <img width="900" height="500" src="Capture.PNG">
