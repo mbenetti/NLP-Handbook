@@ -74,8 +74,8 @@ For each website, there are 500 positive and 500 negative sentences. Those were 
 **For the full datasets please visit:**
 
 * IMDB: Maas et. al., 2011 'Learning word vectors for sentiment analysis'
-* amazon: McAuley et. al., 2013 'Hidden factors and hidden topics: understanding rating dimensions with review text'
-* yelp: Yelp dataset challenge http://www.yelp.com/dataset_challenge
+* Amazon: McAuley et. al., 2013 'Hidden factors and hidden topics: understanding rating dimensions with review text'
+* Yelp: Yelp dataset challenge http://www.yelp.com/dataset_challenge
 
 ## Advantages of running on VS Code instead of a Jupyter Notebook
 
@@ -87,7 +87,7 @@ This is a game-changer for data analysis because you no longer need to code in a
 Repeat this process as you run code, explore, and build out your analysis. Note that you can also type Python directly into the Interactive Window just like you can type directly in R’s Console as well to execute code. Also, It is possible to see all the variables created and their type
 
 **With this approach we avoid the limitations presented by Jupyter Notebooks when you want to do Version control (eg: Git).**
-co
+
 <p align="center">
   <img width="900" height="500" src="figures\Capture.PNG">
 </p>
