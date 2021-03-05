@@ -23,14 +23,14 @@ For additional information you can visit:
 # 
 # Introduction
 
-**Natural Language Processing** (NLP) is the area of machine learning that focuses on the  generation and understanding of language. Its main objective is to enable machines to understand, communicate and interact with humans in a natural way.
+**Natural Language Processing** (NLP) is the area of machine learning that focuses on the generation and understanding of language. Its main objective is to enable machines to understand, communicate and interact with humans in a natural way.
 
 NLP has many tasks such as **Text Generation**, **Text Classification**,**Machine Translation**,  **Speech Recognition**, **Sentiment Analysis**, etc. For a beginner to NLP, looking at these tasks and all the techniques involved in handling such tasks can be quite daunting. 
 And in fact, it is very difficult for a newbie to know exactly where and how to start.
 
-Out of all the NLP tasks, Sentiment Analysis (SA) is probably one of the easiest, which makes it the most suitable starting point for anyone who wants to start go into NLP.
+Out of all the NLP tasks, Sentiment Analysis (SA) is probably one of the easiest, which makes it the most suitable starting point for anyone who wants to start going into NLP.
 
-In this article, various techniques were compile to perform SA, ranging from simple ones like **TextBlob** and **NLTK** to more advanced ones like **Sklearn** and **Long Short Term Memory (LSTM)** networks.
+In this article, various techniques were compiled to perform SA, ranging from simple ones like **TextBlob** and **NLTK** to more advanced ones like **Sklearn** and **Long Short Term Memory (LSTM)** networks.
 
 After reading this, you can expect to understand the followings:
 
@@ -47,44 +47,44 @@ The flow of this article:
     
 ## Problem 
 
-In this article, we will work with a data set that consists of 3000 sentences coming from reviews on imdb.com, amazon.com, and yelp.com. Each sentence is labeled according to whether it comes from a positive review (labelled as 1) or negative review (labelled as 0).The folder sentiment_labelled_sentences(containing the data file full_set.txt) should be in the same directory as your notebook/script.
+In this article, we will work with a data set that consists of 3000 sentences coming from reviews on imdb.com, amazon.com, and yelp.com. Each sentence is labelled according to whether it comes from a positive review (labelled as 1) or a negative review (labelled as 0). The folder sentiment_labelled_sentences(containing the data file full_set.txt) should be in the same directory as your notebook/script.
 
 ## Content of this repository
 
 Included in this repository, the file '01_Preparation.py' is written to be executed in 
-VS Code with a interactive python session. A jupyter notebook and a markdown version of 
-the notebook is included due to the convenience for reading as a book. 
+VS Code with an interactive python session. A jupyter notebook and a markdown version of 
+the notebook is included due to the convenience of reading like a book. 
 
 Datasets in this repo: 
-This dataset was created for the Paper 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015. Please cite the paper if you want to use it.
+This dataset was created for the Paper 'From Group to Individual Labels using Deep Features', Kotzias et. al, KDD 2015. Please cite the paper if you want to use it.
 
 It contains sentences labelled with positive or negative sentiment, extracted from reviews of products, movies, and restaurants
 
 Format:     "sentence" \t score \n
 Details:    Score, either 1 (for positive) or 0 (for negative)	
 
-The sentences come from three different websites/fields:
+The sentences come from three different websites and fields:
 
 * imdb.com
 * amazon.com
 * yelp.com
 
-For each website, there exist 500 positive and 500 negative sentences. Those were selected randomly for larger datasets of reviews. The goal is to select sentences that have a clearly positive or negative connotation, almost no neutral sentences to be selected.
+For each website, there are 500 positive and 500 negative sentences. Those were selected randomly for larger datasets of reviews. The goal is to select sentences that have a positive or negative connotation, with almost no neutral sentences to be selected.
 
 **For the full datasets please visit:**
 
-* imdb: Maas et. al., 2011 'Learning word vectors for sentiment analysis'
-* amazon: McAuley et. al., 2013 'Hidden factors and hidden topics: Understanding rating dimensions with review text'
+* IMDB: Maas et. al., 2011 'Learning word vectors for sentiment analysis'
+* amazon: McAuley et. al., 2013 'Hidden factors and hidden topics: understanding rating dimensions with review text'
 * yelp: Yelp dataset challenge http://www.yelp.com/dataset_challenge
 
-## Advantages of running on VS Code instead a Jupyter Notebook
+## Advantages of running on VS Code instead of a Jupyter Notebook
 
 The following tutorial explains the VS Code Interactive Python feature:
 https://code.visualstudio.com/docs/python/jupyter-support-py#_python-interactive-window
 
-This is a game changer when writing Python code for analysis because you no longer need to code in a Jupyter Notebook to execute your analysis. Simply write your code in a .py file and press Shift+ENTER to execute line-by-line in the Python Interactive Window. 
+This is a game-changer for data analysis because you no longer need to code in a Jupyter Notebook to execute your analysis. Simply write your code in a .py file and press Shift+ENTER to execute line-by-line in the Python Interactive Window. 
 
-Repeat this process as you run code, explore, and build out your analysis. Note that you can also type Python directly into the Interactive Window just like you can type directly in R’s Console as well to execute code. Also It is possible to see all the variables created and their type
+Repeat this process as you run code, explore, and build out your analysis. Note that you can also type Python directly into the Interactive Window just like you can type directly in R’s Console as well to execute code. Also, It is possible to see all the variables created and their type
 
 **With this approach we avoid the limitations presented by Jupyter Notebooks when you want to do Version control (eg: Git).**
 co
