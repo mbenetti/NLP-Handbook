@@ -25,7 +25,7 @@ For additional information you can visit:
 
 **Natural Language Processing** (NLP) is the area of machine learning that focuses on the  generation and understanding of language. Its main objective is to enable machines to understand, communicate and interact with humans in a natural way.
 
-NLP has many tasks such as **Text Generation**, **Text Classification**,** Machine Translation**,  **Speech Recognition**, **Sentiment Analysis**, etc. For a beginner to NLP, looking at these tasks and all the techniques involved in handling such tasks can be quite daunting. 
+NLP has many tasks such as **Text Generation**, **Text Classification**,**Machine Translation**,  **Speech Recognition**, **Sentiment Analysis**, etc. For a beginner to NLP, looking at these tasks and all the techniques involved in handling such tasks can be quite daunting. 
 And in fact, it is very difficult for a newbie to know exactly where and how to start.
 
 Out of all the NLP tasks, Sentiment Analysis (SA) is probably one of the easiest, which makes it the most suitable starting point for anyone who wants to start go into NLP.
