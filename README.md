@@ -8,7 +8,7 @@ applied to Sentiment Analysis.
 
 Adaptation, corrections, and modifications by Mauro Benetti 03-2021
 
-This article is based on:
+This article was based on:
 
 * https://towardsdatascience.com/nlp-sentiment-analysis-for-beginners-e7897f976897
 * https://www.mdeditor.tw/pl/pISR/zh-hk
@@ -25,12 +25,12 @@ For additional information you can visit:
 
 **Natural Language Processing** (NLP) is the area of machine learning that focuses on the  generation and understanding of language. Its main objective is to enable machines to understand, communicate and interact with humans in a natural way.
 
-NLP has many tasks such as Text Generation, Text Classification, Machine Translation,  Speech Recognition, Sentiment Analysis, etc. For a beginner to NLP, looking at these tasks and all the techniques involved in handling such tasks can be quite daunting. 
+NLP has many tasks such as **Text Generation**, **Text Classification**,** Machine Translation**,  **Speech Recognition**, **Sentiment Analysis**, etc. For a beginner to NLP, looking at these tasks and all the techniques involved in handling such tasks can be quite daunting. 
 And in fact, it is very difficult for a newbie to know exactly where and how to start.
 
-Out of all the NLP tasks, I personally think that Sentiment Analysis (SA) is probably the easiest, which makes it the most suitable starting point for anyone who wants to start go into NLP.
+Out of all the NLP tasks, Sentiment Analysis (SA) is probably one of the easiest, which makes it the most suitable starting point for anyone who wants to start go into NLP.
 
-In this article, I compile various techniques of how to perform SA, ranging from simple ones like TextBlob and NLTK to more advanced ones like Sklearn and Long Short Term Memory (LSTM) networks.
+In this article, various techniques were compile to perform SA, ranging from simple ones like **TextBlob** and **NLTK** to more advanced ones like **Sklearn** and **Long Short Term Memory (LSTM)** networks.
 
 After reading this, you can expect to understand the followings:
 
@@ -60,10 +60,11 @@ This dataset was created for the Paper 'From Group to Individual Labels using De
 
 It contains sentences labelled with positive or negative sentiment, extracted from reviews of products, movies, and restaurants
 
-Format:     sentence \t score \n
-Details:    Score is either 1 (for positive) or 0 (for negative)	
+Format:     "sentence" \t score \n
+Details:    Score, either 1 (for positive) or 0 (for negative)	
 
 The sentences come from three different websites/fields:
+
 * imdb.com
 * amazon.com
 * yelp.com
