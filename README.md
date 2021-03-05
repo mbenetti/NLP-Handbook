@@ -1,4 +1,6 @@
-![Credit Pixabay](https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_1280.jpg)
+<p align="center">
+  <img width="900" height="500" src="figures/01.jpg">
+</p>
 
 # NLP Sentiment Analysis Handbook
 
