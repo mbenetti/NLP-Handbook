@@ -86,8 +86,8 @@ This is a game changer when writing Python code for analysis because you no long
 
 Repeat this process as you run code, explore, and build out your analysis. Note that you can also type Python directly into the Interactive Window just like you can type directly in R’s Console as well to execute code. Also It is possible to see all the variables created and their type
 
-With this approach we avoid the limitations on the version control presented by Jupyter Notebooks.
-
+**With this approach we avoid the limitations presented by Jupyter Notebooks when you want to do Version control (eg: Git).**
+co
 <p align="center">
   <img width="900" height="500" src="figures\Capture.PNG">
 </p>
