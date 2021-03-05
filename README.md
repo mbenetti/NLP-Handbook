@@ -18,8 +18,9 @@ For additional information you can visit:
 * https://www.datacamp.com/community/tutorials/stemming-lemmatization-python
 * http://www.nltk.org/data.html
 
--------------------------------------------------------------------------------------
 
+
+# 
 # Introduction
 
 **Natural Language Processing** (NLP) is the area of machine learning that focuses on the  generation and understanding of language. Its main objective is to enable machines to understand, communicate and interact with humans in a natural way.
@@ -52,8 +53,28 @@ In this article, we will work with a data set that consists of 3000 sentences co
 
 Included in this repository, the file '01_Preparation.py' is written to be executed in 
 VS Code with a interactive python session. A jupyter notebook and a markdown version of 
-the notebook is included due to the convenience for reading as a book. Also, a folder with 
-5 datasets labelled as it was mentioned.
+the notebook is included due to the convenience for reading as a book. 
+
+Datasets in this repo: 
+This dataset was created for the Paper 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015. Please cite the paper if you want to use it.
+
+It contains sentences labelled with positive or negative sentiment, extracted from reviews of products, movies, and restaurants
+
+Format:     sentence \t score \n
+Details:    Score is either 1 (for positive) or 0 (for negative)	
+
+The sentences come from three different websites/fields:
+* imdb.com
+* amazon.com
+* yelp.com
+
+For each website, there exist 500 positive and 500 negative sentences. Those were selected randomly for larger datasets of reviews. The goal is to select sentences that have a clearly positive or negative connotation, almost no neutral sentences to be selected.
+
+**For the full datasets please visit:**
+
+* imdb: Maas et. al., 2011 'Learning word vectors for sentiment analysis'
+* amazon: McAuley et. al., 2013 'Hidden factors and hidden topics: Understanding rating dimensions with review text'
+* yelp: Yelp dataset challenge http://www.yelp.com/dataset_challenge
 
 ## Advantages of running on VS Code instead a Jupyter Notebook
 
