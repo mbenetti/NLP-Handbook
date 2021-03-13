@@ -1,4 +1,6 @@
-![Credit Pixabay](https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_1280.jpg)
+<p align="center">
+  <img width="900" height="500" src="figures/01.jpg">
+</p>
 
 # NLP Sentiment Analysis Handbook <!-- omit in toc -->
 
@@ -6,14 +8,15 @@ A Step-By-Step Approach to Understand TextBlob, NLTK, Scikit-Learn, and LSTM  ne
 applied to Sentiment Analysis.
 
 
-Adaptation, corrections and modifications by Mauro Benetti 03-2021
-This article is base on :
+Adaptation, corrections, and modifications by Mauro Benetti 03-2021.
+
+This repository is based on :
 
 * https://towardsdatascience.com/nlp-sentiment-analysis-for-beginners-e7897f976897
 * https://www.mdeditor.tw/pl/pISR/zh-hk
 * https://stackabuse.com/removing-stop-words-from-strings-in-python/
 
-For aditonal information please visit:
+For additional information please visit:
 * https://www.datacamp.com/community/tutorials/stemming-lemmatization-python
 * http://www.nltk.org/data.html
 
@@ -21,29 +24,21 @@ For aditonal information please visit:
 
 # Introduction
 
-**Natural Language Processing** (NLP) is the area of machine learning that focuses on the 
-generation and understanding of language. Its main objective is to enable machines to 
-understand, communicate and interact with humans in a natural way.
+**Natural language processing** (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data. The result is a computer capable of "understanding" the contents of documents, including the contextual nuances of the language within them. The technology can then accurately extract information and insights contained in the documents as well as categorize and organize the documents themselves. Challenges in natural language processing frequently involve speech recognition, natural language understanding, and natural-language generation [(Wikipedia,2020)](https://en.wikipedia.org/wiki/Natural_language_processing). 
 
-NLP has many tasks such as Text Generation, Text Classification, Machine Translation, 
-Speech Recognition, Sentiment Analysis, etc. For a beginner to NLP, looking at these 
-tasks and all the techniques involved in handling such tasks can be quite daunting. 
+NLP has many tasks such as Text Generation, Text Classification, Machine Translation, Speech Recognition, Sentiment Analysis, etc. For a beginner to NLP, looking at these tasks and all the techniques involved in handling such tasks can be quite daunting. 
 And in fact, it is very difficult for a newbie to know exactly where and how to start.
 
-Out of all the NLP tasks, I personally think that Sentiment Analysis (SA) is probably 
-the easiest, which makes it the most suitable starting point for anyone who wants to 
-start go into NLP.
+Out of all the NLP tasks, I personally think that Sentiment Analysis (SA) is probably the easiest, which makes it the most suitable starting point for anyone who wants to start go into NLP.
 
-In this article, I compile various techniques of how to perform SA, ranging from simple 
-ones like TextBlob and NLTK to more advanced ones like Sklearn and Long Short Term 
-Memory (LSTM) networks.
+In this repository, I compile various techniques of how to perform SA, ranging from simple ones like TextBlob and NLTK to more advanced ones like Sklearn and Long Short Term Memory (LSTM) networks.
 
 After reading this, you can expect to understand the followings:
 
 *   Toolkits used in SA: TextBlob and NLTK
 *   Algorithms used in SA: Naive Bayes, SVM, Logistic Regression and LSTM
-*   Jargons like stop-word removal, stemming, bag of words, corpus, tokenisation etc.
-*   Create a word cloud
+*   Jargons like stop-word removal, stemming, bag of words, corpus, tokenization etc.
+*   Create a word cloud.
 
 The flow of this article:
 
@@ -52,15 +47,7 @@ The flow of this article:
 *   Algorithms: Logistic Regression, Naive Bayes, SVM and LSTM
     
 ## Problem Formulation
-
-In this article, I will the sentiment data set that consists of 3000 sentences coming 
-from reviews on imdb.com, amazon.com, and yelp.com. Each sentence is labeled according 
-to whether it comes from a positive review (labelled as 1) or negative review 
-(labelled as 0).
-
-Data can be downloaded from the website. Alternatively, it can be downloaded from here 
-(highly recommended). The folder sentiment_labelled_sentences(containing the data file 
-full_set.txt) should be in the same directory as your notebook.
+In this repository, we will work with a data set that consists of 3000 sentences coming from reviews on imdb.com, amazon.com, and yelp.com. Each sentence is labeled according to whether it comes from a positive review (labelled as 1) or negative review (labelled as 0).The folder sentiment_labelled_sentences(containing the data file full_set.txt) should be in the same directory as your notebook/script.
 
 
 
@@ -77,7 +64,9 @@ matplotlib.rc('xtick', labelsize=14)
 matplotlib.rc('ytick', labelsize=14)
 ```
 
-# Loading data
+# Loading the data
+
+The file **full_set.txt** should be in the same directory as your notebook.
 
 
 ```python
@@ -105,7 +94,7 @@ content[0:10]
 
 # Pre-processing
 
-## Remove leading and trailing white space
+## Removing leading and trailing whitespaces
 
 
 ```python
@@ -287,7 +276,7 @@ sents_processed[0:20]
 
 
 
-## To remove a list of specific stops from the sentences 
+## How to remove a list of specific stops from the sentences 
 
 You can add or remove stop words as per your choice to the existing collection of stop 
 words in NLTK. Before removing or adding stop words in NLTK, let's see the list of all 
@@ -335,7 +324,7 @@ sents_processed[0:20]
 
 
 
-### Adding Stop Words to Default NLTK Stop Word List
+### How to adding Stop Words to Default NLTK Stop Word List
 
 To add a word to NLTK stop words collection, first create an object from the stopwords.
 words('english') list. Next, use the append() method on the list to add any word to the 
@@ -354,7 +343,7 @@ print(all_stopwords)
     ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's", 'her', 'hers', 'herself', 'it', "it's", 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which', 'who', 'whom', 'this', 'that', "that'll", 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', "don't", 'should', "should've", 'now', 'd', 'll', 'm', 'o', 're', 've', 'y', 'ain', 'aren', "aren't", 'couldn', "couldn't", 'didn', "didn't", 'doesn', "doesn't", 'hadn', "hadn't", 'hasn', "hasn't", 'haven', "haven't", 'isn', "isn't", 'ma', 'mightn', "mightn't", 'mustn', "mustn't", 'needn', "needn't", 'shan', "shan't", 'shouldn', "shouldn't", 'wasn', "wasn't", 'weren', "weren't", 'won', "won't", 'wouldn', "wouldn't", 'play']
     
 
-### Removing Stop Words from Default NLTK Stop Word List
+### Removing Stop Words from the default NLTK Stop Word List
 
 
 ```python
@@ -365,7 +354,7 @@ print(all_stopwords)
     ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's", 'her', 'hers', 'herself', 'it', "it's", 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which', 'who', 'whom', 'this', 'that', "that'll", 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', "don't", 'should', "should've", 'now', 'd', 'll', 'm', 'o', 're', 've', 'y', 'ain', 'aren', "aren't", 'couldn', "couldn't", 'didn', "didn't", 'doesn', "doesn't", 'hadn', "hadn't", 'hasn', "hasn't", 'haven', "haven't", 'isn', "isn't", 'ma', 'mightn', "mightn't", 'mustn', "mustn't", 'needn', "needn't", 'shan', "shan't", 'shouldn', "shouldn't", 'wasn', "wasn't", 'weren', "weren't", 'won', "won't", 'wouldn', "wouldn't", 'play']
     
 
-### Tokenization
+## Tokenization and steamming
 
 It is ok to stop here and move to Tokenization. However, one can continue with stemming. 
 The goal of stemming is too strip off prefixes and suffixes in the word and convert the 
