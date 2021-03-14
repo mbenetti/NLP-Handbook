@@ -369,29 +369,26 @@ test_data = data_mat[test_index,]
 test_labels = y[test_index]
 
 
-# In[ ]:
-
-
-#-------------------------------------------------------------------------------------
-# ### TextBlob
-
+# -------------------------------------------------------------------------------------
+# # TextBlob
+# 
 # TextBlob : Linguistic researchers have labeled the sentiment of words based on their 
 # domain expertise. Sentiment of words can vary based on where it is in a sentence. The 
 # TextBlob module allows us to take advantage of these labels. TextBlod finds all the words 
 # and phrases that it can assign polarity and subjectivity to, and average all of them 
 # together.
-
+# 
 # Sentiment Labels : Each word in a corpus is labeled in terms of polarity and subjectivity 
 # (there are more labels as well, but we’re going to ignore them for now). A corpus’ 
 # sentiment is the average of these.
-
+# 
 # Polarity : How positive or negative a word is. -1 is very negative. +1 is very positive.
 # Subjectivity : How subjective, or opinionated a word is. 0 is fact. +1 is very much 
 # an opinion.
+# 
 
-
-# ### Create polarity function and subjectivity function
-
+# 
+# ## Create polarity function and subjectivity function
 
 # In[28]:
 
@@ -401,7 +398,6 @@ pol = lambda x: TextBlob(x).sentiment.polarity
 sub = lambda x: TextBlob(x).sentiment.subjectivity
 pol_list = [pol(x) for x in sents_processed]
 sub_list = [sub(x) for x in sents_processed]
-#-------------------------------------------------------------------------------------
 
 
 # In[29]:
