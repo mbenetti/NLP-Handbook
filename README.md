@@ -98,6 +98,6 @@ Repeat this process as you run code, explore, and build out your analysis. Note 
 For more information visit (https://code.visualstudio.com/docs/python/jupyter-support-py)
 
 <p align="center">
-  <img width="460" height="300" src="https://code.visualstudio.com/assets/docs/python/jupyter/plot-viewer.gif">
+  <img src="figures\NLP-Handbook.gif.jpg">
 </p>
 
