@@ -2,11 +2,10 @@
   <img width="900" height="500" src="figures/01.jpg">
 </p>
 
-# NLP Sentiment Analysis Handbook
+# NLP Sentiment Analysis Handbook 
 
 A Step-By-Step Approach to Understand TextBlob, NLTK, Scikit-Learn, and LSTM  networks 
 applied to Sentiment Analysis.
-
 
 Adaptation, corrections, and modifications by Mauro Benetti 03-2021
 
