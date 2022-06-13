@@ -148,8 +148,10 @@ removeStopWords(stoppers, "this is a test of the stop word removal code")
 
 # In[8]:
 
+#Only run this line the first time, run python command and then on the >>>
+# import nltk
 
-#nltk.download(stopwords) #Only run this line the first time
+# nltk.download(stopwords) 
 
 
 # In[9]:
@@ -177,7 +179,11 @@ filtered_words = [word for word in word_list if word not in stops]
 # ## All together
 
 # In[12]:
+# Using the stopwords.
+from nltk.corpus import stopwords
 
+# Initialize the stopwords
+stoplist = stopwords.words('english')
 
 def full_remove(x, removal_list):
     for w in removal_list:
@@ -197,7 +203,7 @@ sents_lower = [x.strip() for x in sents_lower]
 
 # ### Remove stop words 
 from nltk.corpus import stopwords
-stops = stopwords.words("English")
+stops = stopwords.words("english")
 
 def removeStopWords(stopWords, txt):
     newtxt = ' '.join([word for word in txt.split() if word not in stopWords])
